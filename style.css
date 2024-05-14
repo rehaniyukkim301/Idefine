@@ -1,0 +1,100 @@
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-align-center {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #9C1D26;
+  color: white;
+  font-family:'Open Sans', sans-serif;
+  border: 1px solid #D8D8D8;
+  font-weight: bold;
+  border-radius: 25px;
+  letter-spacing: 1px;
+  width: 50%;
+  height: 40px;
+  transition: 300ms background-color ease-in-out;
+}
+button:hover {
+  background-color: #fff;
+  border:1.5px solid #9C1D26;
+  color:#9C1D26;
+}
+
+.input-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+.input-group__label {
+  display: block;
+  position: absolute;
+  top: 0;
+  line-height: 50px;
+  color: #aaa;
+  font-size:14px;
+  left: 56px;
+  font-family: 'Open Sans', sans-serif;
+  transition: line-height 300ms ease-in-out, font-size 200ms ease-in-out, top 200ms ease-in-out;
+  pointer-events: none;
+}
+.input-group__label2 {
+  display: block;
+  position: absolute;
+  top: 0;
+  line-height: 50px;
+  color: #aaa;
+  font-size:14px;
+  left: 30px;
+  font-family: 'Open Sans', sans-serif;
+  transition: line-height 300ms ease-in-out, font-size 200ms ease-in-out, top 200ms ease-in-out;
+  pointer-events: none;
+}
+.input-group__input {
+  width: 90%;
+  height: 50px;
+  border: 1.5px solid #D8D8D8;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+.input-group__input:not(:-moz-placeholder-shown) + label {
+  background-color: white;
+  line-height: 10px;
+  opacity: 1;
+  font-size: 10px;
+  top: -5px;
+}
+.input-group__input:not(:-ms-input-placeholder) + label {
+  background-color: white;
+  line-height: 10px;
+  opacity: 1;
+  font-size: 10px;
+  top: -5px;
+  font-family: 'Open Sans', sans-serif;
+}
+.input-group__input:not(:placeholder-shown) + label, .input-group__input:focus + label{
+  background-color: white;
+  line-height: 10px;
+  opacity: 1;
+  font-size: 12px;
+  Color:#707070;
+  top: -5px;
+   font-family: 'Open Sans', sans-serif;
+}
+.input-group__input:focus {
+  outline: none;
+  border: 1.5px solid #707070;
+  font-family: 'Open Sans', sans-serif;
+}
+.input-group__input:focus + label +i{
+  color: #9C1D26;
+  border-color:#707070;
+}
